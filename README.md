@@ -85,3 +85,16 @@ Langkah berikutnya adalah klik follow lalu cari HTTP stream. Setelah itu, klik p
 ![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/a49ef58e-458a-4300-91ba-4600beaed00a)
 
 Lalu, terlihat nama server adalah `gunicorn`
+
+
+# Nomor 3
+3. Dapin sedang belajar analisis jaringan. Bantulah Dapin untuk mengerjakan soal berikut:
+
+    a. Berapa banyak paket yang tercapture dengan IP source maupun destination address adalah 239.255.255.250 dengan port 3702?
+
+    b. Protokol layer transport apa yang digunakan?
+
+## Jawaban
+
+### 3a. Berapa banyak paket yang tercapture dengan IP source maupun destination address adalah 239.255.255.250 dengan port 3702?
+

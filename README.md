@@ -68,3 +68,20 @@ Acknowledge number (raw) terlihat saat packet diklik
 
 
 # Nomor 2
+2. Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
+
+## Jawaban
+
+Langkah awal yang dapat dilakukan adalah mencari packet melalui jaringan yang ada dari OpenVPN
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/ba727543-bbaa-415d-b96f-f0e88ac1c9db)
+
+Langkah selanjutnya adalah mencari protokol HTTP pada filtering lalu klik pada packet yang menunjukkan aktivitas portal praktikum Jaringan Komputer
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/5ad47036-4be0-4423-bef7-71e5a8a6b2ba)
+
+Langkah berikutnya adalah klik follow lalu cari HTTP stream. Setelah itu, klik pada HTTP stream dan akan terbuka pop up seperti berikut
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/a49ef58e-458a-4300-91ba-4600beaed00a)
+
+Lalu, terlihat nama server adalah `gunicorn`

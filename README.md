@@ -15,3 +15,17 @@
 
 
 # Nomor 1
+1. User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya adalah mengunggah suatu file.
+a. Berapakah sequence number (raw) pada packet yang menunjukkan aktivitas tersebut? 
+b. Berapakah acknowledge number (raw) pada packet yang menunjukkan aktivitas tersebut? 
+c. Berapakah sequence number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
+d. Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
+
+## Jawaban
+
+Pada nomor ini, terdapat informasi bahwa ada aktivitas dengan protokol FTP dan mengunggah suatu file, maka langkah pertama yang dilakukan adalah menuliskan
+```
+ftp
+```
+pada filtering
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/8e458409-08cf-412f-b0e0-db6dcb95ee28)

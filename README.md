@@ -130,4 +130,23 @@ Berikut adalah hasilnya
 
 ![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/d7122295-cbd8-4355-85f7-243501e9df9b)
 
+# Nomor 4
+
+4. Berapa nilai checksum yang didapat dari header pada paket nomor 130?
+
+## Jawaban
+
+Langkah pertama adalah mencari packet dengan nomor 130
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/fdc807f4-ef92-47f1-91c1-c14892d59bf7)
+
+Langkah kedua adalah mencari checksum
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/1f0716bf-0381-431b-85b9-4f3ddc4f2d58)
+
+Berikut adalah hasilnya
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/aae4eeab-43b8-4e4e-9e10-34995686e7e6)
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/78719126-fa57-4838-b50b-8e3ca6bb4abd)
 

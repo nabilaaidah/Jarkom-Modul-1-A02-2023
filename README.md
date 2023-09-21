@@ -28,4 +28,4 @@ Pada nomor ini, terdapat informasi bahwa ada aktivitas dengan protokol FTP dan m
 ftp
 ```
 pada filtering
-![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/8e458409-08cf-412f-b0e0-db6dcb95ee28)
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/63b58dc5-8c3b-4b5d-b248-440d4bbf6880)

@@ -150,3 +150,53 @@ Berikut adalah hasilnya
 
 ![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/78719126-fa57-4838-b50b-8e3ca6bb4abd)
 
+# Nomor 5
+
+5.Elshe menemukan suatu file packet capture yang menarik. Bantulah Elshe untuk menganalisis file packet capture tersebut.
+    a. Berapa banyak packet yang berhasil di capture dari file pcap tersebut?
+    b. Port berapakah pada server yang digunakan untuk service SMTP?
+    c. Dari semua alamat IP yang tercapture, IP berapakah yang merupakan public IP?
+
+## Jawaban
+
+Dikarenakan belum terdapat netcat, maka kita harus mencari nc nya terlebih dahulu. Di dalam soal terdapat file unzip yang akan me-lead ke dalam nc yang dicari. Namun, untuk membuka file tersebut, diharuskan bisa melakukan unlock dengan password
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/8cb38ded-89b1-452b-8a5c-f2cd27b9bbd2)
+
+Untuk mendapatkan password tersebut, maka kita akan mencari packet dengan protocol smtp pada file pcap
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/c30034e4-4ae0-416e-a5e7-dfa442cf30e6)
+
+Setalah itu, pilih salah satu packet dan buka tcp streamnya, dan dapat terlihat bahwa terdapat password mencurigakan
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/31dbc76c-fbb4-49a3-b05c-9332496a5e43)
+
+Mengikuti perintah yang terdapat pada tcp stream, password di-decode dan didapatkan `5implePas5word` lalu dimasukkan untuk melakukan unlock. Dan hasilnya mengarah dengan nc yang dipakai pada soal ini
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/9194bbd8-9ea3-4e74-9e8b-7020a3976849)
+
+### 5a. Berapa banyak packet yang berhasil di capture dari file pcap tersebut?
+
+Pada file pcap terlihat terdapat 60 packet yang tercapture
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/97dfeb46-5da3-4a32-a916-35c59cb59b93)
+
+### 5b. Port berapakah pada server yang digunakan untuk service SMTP?
+
+Port default yang digunakan untuk service SMTP adalah `25`
+
+### 5c. Dari semua alamat IP yang tercapture, IP berapakah yang merupakan public IP?
+
+Pada packet yang ditujukan terdapat ip src dan dst seperti berikut
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/406b947c-6426-494a-a7cc-05f0e14f1184)
+
+Dari kedua ip tersebut, dapat diketahui bahwa ip publicnya adalah `74.53.140.153` dikarenakan juga ip private ranging dari berikut
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/06cfe61d-52c8-4b54-8892-0e8614a85687)
+
+Hasilnya adalah sebagai berikut
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/c8ddd6d4-03e0-4abb-a131-5705c6678a97)
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/74c0f417-4fc9-45b0-8da0-1624be7ac780)

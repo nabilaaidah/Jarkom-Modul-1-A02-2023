@@ -33,3 +33,7 @@ ftp
 ```
 pada filtering
 ![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/63b58dc5-8c3b-4b5d-b248-440d4bbf6880)
+
+Setelah itu, mencari packet yang mengunggah suatu file, dan dapat ditemukan pada packet no 149 terdapat aktivitas pengunggahan file
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/6c11b44e-cc3c-4d81-9842-e4a304c292fa)

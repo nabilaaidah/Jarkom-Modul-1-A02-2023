@@ -1,7 +1,7 @@
 # Jarkom-Modul-1-A02-2023
 <table>
     <tr>
-        <th colspan=2> Kelompok E03 </th>
+        <th colspan=2> Kelompok A02 </th>
     </tr>
     <tr>
         <th>NRP</th>
@@ -12,3 +12,6 @@
         <td>Nabila A'idah Diani</td>
     </tr>
 </table>
+
+
+# Nomor 1

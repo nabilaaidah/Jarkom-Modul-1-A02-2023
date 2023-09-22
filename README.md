@@ -236,7 +236,7 @@ Hal pertama yang dilakukan adalah melakukan filtering dengan `ip.dst==184.87.193
 
 Berikut merupakan hasilnya
 
-![Uploading image.png…]()
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/3600761b-c9cc-4e14-8967-34f60858ac9c)
 
 
 # Nomor 8

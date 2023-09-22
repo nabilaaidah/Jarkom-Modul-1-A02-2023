@@ -200,3 +200,112 @@ Hasilnya adalah sebagai berikut
 ![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/c8ddd6d4-03e0-4abb-a131-5705c6678a97)
 
 ![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/74c0f417-4fc9-45b0-8da0-1624be7ac780)
+
+
+# Nomor 6
+
+6. Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.
+
+Beserta hint:
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/325c736f-e050-4cce-9384-0e8895f5b2de)
+
+## Jawaban
+
+Pada soal terdapat tulisan bahwa `server SOURCE ADDRESS 7812 is invalid`, sehingga hal pertama yang dapat dilakukan adalah mencari packet bernomor 7812
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/b7a5a121-94ae-4a80-9406-849625d58630)
+
+Dikarenakan pada hint tertulis bahwa source address adalah kunci, maka dapat dilihat bahwa source addressnya adalah 104.18.14.101. Lalu, pada hint kedua dan ketiga merupakan hint terdapat cypher a1z26 dengan rentang A-R dan 1-18 yang berarti A = 1, B = 2, dst sampai dengan R = 18. Pada hint juga tertulis bahwa jawabannya 6 huruf sehingga source address dapat dipenggal menjadi 10 4 18 14 10 1 yang jika dicypher menjadi JDRNJA.
+
+Berikut merupakan hasilnya
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/fb60eeea-1120-4776-8eae-189d55d291b2)
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/b32b00ef-6a87-4ab0-9bf9-7733c2da5d46)
+
+
+# Nomor 7
+7. Berapa jumlah packet yang menuju IP 184.87.193.88?
+
+## Jawaban 
+
+Hal pertama yang dilakukan adalah melakukan filtering dengan `ip.dst==184.87.193.88`, lalu lihat jumlah packet dengan jara ke statistic > endpoint
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/3aa9f1c3-d30a-4a77-a53a-410d7f5ef7ef)
+
+Berikut merupakan hasilnya
+
+![Uploading image.png…]()
+
+
+# Nomor 8
+8. Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
+
+## Jawaban
+
+Dalam mengambil semua protokol paket yang menuju port 80 dapat dilakukan dengan filtering `tcp.dstport==80 || udp.dstport==80`
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/30e583fd-76df-4185-a864-39d13c2e9bc0)
+
+Berikut merupakan hasilnya
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/d3a76055-8e26-4737-a02a-a766726cb1a0)
+
+
+# Nomor 9
+
+9. Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34!
+
+## Jawaban
+
+Masukkan `ip.src==10.51.40.1 && ip.dst!=10.39.55.34` untuk filtering
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/342c9c81-05a4-4a5d-be77-09bdbc3b80e4)
+
+Berikut merupakan hasilnya
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/063322fb-540e-4d48-a7af-8f88e809ffb4)
+
+
+# Nomor 10
+
+10. Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
+
+## Jawaban
+
+Langkah pertama adalah mencari packet dengan protokol telnet yang memiliki kredensial
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/50513e4c-3238-487a-ad67-42f264185b21)
+
+Dan dari tcp stream tersebut dapat diketahui username dan passwordnya
+
+Berikut merupakan hasilnya
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/b67da66a-ca27-4480-893a-0af2033ddfc9)
+
+
+# Kendala
+- Jawaban ternyata case sensitive, sehingga jawaban yang benar harus diinput berkali2 karena tidak sesuai dengan yang diinginkan.
+- Terdapat jawaban yang benar dengan penulisan yang sama, tapi satu ditolak dan satunya diterima.
+
+Yang ditolak:
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/2ca78134-29d1-4872-9752-fe4f3efd0958)
+
+Yang diterima:
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/eac5eb0d-5602-4cba-b84c-4b5f3c4a5280)
+
+- Melakukan pendownloadan file, tetapi file yang didownload tidak lengkap dan saat didownload kedua kalinya baru lengkap
+
+Yang tidak lengkap:
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/1ebb4e15-eb09-4f15-9929-310329aa750a)
+
+Yang lengkap:
+
+![image](https://github.com/nabilaaidah/Jarkom-Modul-1-A02-2023/assets/110476969/98078c9b-6c9d-4f58-b369-6ebbab10b975)
+
+
+
